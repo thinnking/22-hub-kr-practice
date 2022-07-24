@@ -20,9 +20,11 @@ demo-model-link: https://huggingface.co/spaces/pytorch/Tacotron2
 
 ### Model Description
 
-The Tacotron 2 and WaveGlow model form a text-to-speech system that enables user to synthesise a natural sounding speech from raw transcripts without any additional prosody information. The Tacotron 2 model produces mel spectrograms from input text using encoder-decoder architecture. WaveGlow (also available via torch.hub) is a flow-based model that consumes the mel spectrograms to generate speech.
+<!--The Tacotron 2 and WaveGlow model form a text-to-speech system that enables user to synthesise a natural sounding speech from raw transcripts without any additional prosody information. The Tacotron 2 model produces mel spectrograms from input text using encoder-decoder architecture. WaveGlow (also available via torch.hub) is a flow-based model that consumes the mel spectrograms to generate speech. -->
+Tacotron2와 WaveFlow 모델은 사용자가 추가 운율 정보 없이 원시 대본으로부터 자연스럽게 들리는 음성을 합성할 수 있는 text-to-speech 시스템을 형성합니다. Tacotron2 모델은 인코더-디코더 구조를 사용하여 입력 텍스트로부터 멜스펙트로그램을 생성합니다. WaveGlow(torch.hub를 통해 사용할 수 있습니다)는 음성을 생성하기 위해 멜스펙트로그램을 사용하는 flow 기반 모델입니다. 
 
-This implementation of Tacotron 2 model differs from the model described in the paper. Our implementation uses Dropout instead of Zoneout to regularize the LSTM layers.
+<!--This implementation of Tacotron 2 model differs from the model described in the paper. Our implementation uses Dropout instead of Zoneout to regularize the LSTM layers.-->
+이 페이지의 Tacotron2 모델 구현체는 논문에서 설명하고 있는 모델과 차이가 있습니다. 여기서는 LSTM 계층의 정규화를 위해 Zoneout 대신 Dropout을 사용합니다. 
 
 ### Example
 
